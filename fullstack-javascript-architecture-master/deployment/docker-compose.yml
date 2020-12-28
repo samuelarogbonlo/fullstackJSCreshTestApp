@@ -6,7 +6,7 @@ services:
     image: database
     build: ../backend/database
     volumes:
-      - ./backend/database:backend
+      - ../backend/database:backend
     restart: always
     networks:
       - back
