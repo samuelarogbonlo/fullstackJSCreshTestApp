@@ -31,6 +31,6 @@ const connectWithRetry = async () => {
       useCreateIndex: true,
       useFindAndModify: false,
       useUnifiedTopology: true
-    }
+    }, () => console.log("Connected Succesfully")
   )
 }
