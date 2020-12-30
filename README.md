@@ -69,13 +69,6 @@ A typical product (SaaS, etc.) usually consists of following services:
     - NGINX
 
 ### Frontend
-- Landing
-    - NodeJS
-    - Express
-    - React
-    - React Router
-    - Server Side Rendering
-    - Material UI
 
 - Web
     - React
@@ -95,7 +88,7 @@ A typical product (SaaS, etc.) usually consists of following services:
     - MongoDB (`v4.x`)
     - Follow [React Native Guide](https://facebook.github.io/react-native/docs/getting-started) to setup your local machine
 
-- Clone repository `git clone git@github.com:atulmy/fullstack-javascript-architecture.git fullstack`
+- Clone repository `git clone https://github.com/samuelarogbonlo/fullstackJSTestApp.git`
 
 - **API**
     - Info
@@ -107,7 +100,7 @@ A typical product (SaaS, etc.) usually consists of following services:
     - Configuration
         - Create local environment file `cp .env.dev.example .env.local`
         - Modify `.env.local` for
-            - `PORT` (`8000`)
+            - `PORT` (`8080`)
             - `NODE_ENV` (`development` | `production`)
             - `SECURITY_SECRET` (Use [passwordsgenerator](https://passwordsgenerator.net))
             - `SECURITY_SALT_ROUNDS` (`10`)
@@ -117,50 +110,31 @@ A typical product (SaaS, etc.) usually consists of following services:
             - `API_URL` (`http://localhost:8000`)
             - `EMAIL_ON` (`0` | `1` (in development, you can toggle to send emails or not))
             - `EMAIL_TEST` (send test emails to this address)
-            - `EMAIL_HOST`, `EMAIL_USER`, `EMAIL_PASSWORD` (use any email service, eg. [mailgun.com](https://www.mailgun.com/) and get credentials to start sending emails
+            
     - Setup
         - Install packages and seed database `npm run setup`
     - Run
         - Start API server: `npm start` (http://localhost:8000)
 
-- **Landing**
-    - Switch to `landing` directory `cd frontend/landing`
-    - Configuration
-        - Create local environment file `cp .env.dev.example .env.local`
-        - Modify `.env.local` for
-            - `PORT` (`3000`)
-            - `NODE_ENV` (`development` | `production`)
-            - `URL_LANDING` (`http://localhost:3000`)
-            - `URL_WEB` (`http://localhost:5000`)
-            - `URL_API` (`http://localhost:8000`)
-            - `GA_TRACKING_ID` (Google analytics tracking ID)
-    - Setup
-        - Install dependencies: `npm install`
-    - Run
-        - Start Landing server: `npm start`, browse at http://localhost:3000
-    - Resources
-        - Use [getterms.io](https://getterms.io) to generate Privacy Policy / Terms of Use
-        - Favicon generator [realfavicongenerator](https://realfavicongenerator.net)
 
 - **Web**
     - Switch to `web` directory `cd frontend/app/web`
     - Configuration
         - Create local environment file `cp .env.dev.example .env.local`
         - Modify `.env.local` for
-            - `PORT` (`5000`)
-            - `REACT_APP_LANDING_URL` (`http://localhost:3000`)
-            - `REACT_APP_WEB_URL` (`http://localhost:5000`)
+            - `PORT` (`3000`)
+            - `REACT_APP_WEB_URL` (`http://localhost:3000`)
             - `REACT_APP_API_URL` (`http://localhost:8000`)
     - Setup
         - Install dependencies: `npm install`
     - Run
-        - Start Web server: `npm start`, browse at http://localhost:5000
+        - Start Web server: `npm start`, browse at http://localhost:3000
 
 - **Deployment**
     - Deploy code
         1. Login to the server (SSH)
         2. Create a new directory on server: `mkdir /var/www/fullstack` and switch to the directory `cd /var/www/fullstack`
-        3. Clone repository `git clone git@github.com:atulmy/fullstack-javascript-architecture.git .`
+        3. Clone repository `git clone https://github.com/samuelarogbonlo/fullstackJSTestApp.git .`
         4. Switch to `deployment` directory `cd deployment`
         5. Build containers `docker-compose up --build -d`
             - `up` = Builds, (re)creates, starts, and attaches to containers for a service.
@@ -209,11 +183,6 @@ View all screenshots [here](https://github.com/atulmy/atulmy.github.io/tree/mast
 - [YOUR NAME HERE] - Feel free to contribute to the codebase by resolving any open issues, refactoring, adding new features, writing test cases or any other way to make the project better and helpful to the community. Feel free to fork and send pull requests.
 
 ## Resources and Inspirations
-- 💁‍♂️ Hand picked collection of packages, tutorials and more for React Native - [GitHub](https://github.com/atulmy/react-native-curated)
-- 🌱 Lightweight (remote procedure call) API pattern - [GitHub](https://github.com/atulmy/wispy)
-- 🛡 A simple validation library for server and client side applications - [GitHub](https://github.com/atulmy/fullstack-validator) &bull; [NPM](https://www.npmjs.com/package/fullstack-validator)
-- 🌐 Universal react application with server side rendering - [GitHub](https://github.com/atulmy/universal-react)
-- 📦 A sample web and mobile application built with Node, Express, React, React Native and Redux - [GitHub](https://github.com/atulmy/crate)
 - Start learning by looking at sample codes on GitHub: [#LearnByExamples](https://github.com/topics/learn-by-examples)
 
 ## Hire me
@@ -223,3 +192,4 @@ Looking for a devops engineer to build your next infrastruture to work remotely?
 ## License
 
 The MIT License (http://www.opensource.org/licenses/mit-license.php)
+
