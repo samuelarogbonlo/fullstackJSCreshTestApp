@@ -146,7 +146,10 @@ A typical product (SaaS, etc.) usually consists of following services:
             - Change directory `cd /var/www/fullstack`
             - Pull latest code `git pull`
             - Rebuild containers: `docker-compose up --build -d`
-       
+
+- **Pulumi**
+    - The link to the Pulumi update for the Cresh Test is thus 'https://app.pulumi.com/samuelarogbonlo/CreshTest/creshtest'
+    
      
 ## Screenshots
 
